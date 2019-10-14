@@ -20,8 +20,8 @@ pages. -->
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Original CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <title>Colin's Home Page</title>
 </head>
@@ -31,9 +31,9 @@ pages. -->
     <div class="my-header">
         <nav class="navbar my-navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Colin Reesor</a>
+                <a id="logo" class="navbar-brand" href="index.html">Colin Reesor</a>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav">
                         <li><a class="navbar-text" href="index.html">About</a></li>
                         <li><a class="navbar-text" href="portfolio.html">Portfolio</a></li>
                         <li><a class="navbar-text" href="contact.html">Contact</a></li>
@@ -44,36 +44,40 @@ pages. -->
         <img src="./Assets/Images/background.png">
     </div>
 
-    <div class="container container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="page-header">
-                    <h1>About Me</h1>
+    <div class="container">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="page-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <img class="img-auth img-thumbnail img-fluid" src="assets/images/Auth-pic.jpg"
+                        alt="My senior high school picture"><br /><br />
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <img class="img-auth img-thumbnail img-fluid" src="assets/images/Auth-pic.jpg"
-                            alt="My senior high school picture"><br /><br />
-                    </div>
-                    <div class="about-text col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                        <p>Greetings, humans. I know that this old high school picture of me probably looks like I'm saying, "hey, dude", but I'm really not. Back then, having bleached hair and sideburns was a thing - not so much now.
-                        </p>
-                        <p>I will say that hittin' that top button is always fashionable, no matter the decade - unless you're Henry Rollins. What the neck!</p>
-                    </div>
+                <div class="about-text col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <p>Greetings, humans. I know that this old high school picture of me probably looks like I'm saying,
+                        "hey, dude", but I'm really not. Back then, having bleached hair and sideburns was a thing - not
+                        so much now.
+                    </p>
+                    <p>I will say that hittin' that top button is always fashionable, no matter the decade - unless
+                        you're Henry Rollins. What the neck!</p>
                 </div>
-                <div class="row">
-                    <div class="about-text col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <p>Some of my interests include artwork, soccer, biking, skateboarding, running around in the mountains, and melting faces with my guitar. I've been interested in coding for a while, and have written small apps independently here and there over the years. I was introduced to Web development a couple of years ago and I'm really excited to finally get the formal training I've wanted.
-                        </p>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="about-text col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <p>Some of my interests include artwork, soccer, biking, skateboarding, running around in the
+                        mountains, and melting faces with my guitar. I've been interested in coding for a while, and
+                        have written small apps independently here and there over the years. I was introduced to Web
+                        development a couple of years ago and I'm really excited to finally get the formal training I've
+                        wanted.
+                    </p><br>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
     <footer>
-        <div class="footer navbar navbar-default navbar-fixed-bottom">
+        <div class="footer navbar-fixed-bottom">
             &copy; Copyright 2019 Colin Reesor
         </div>
     </footer>

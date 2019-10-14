@@ -16,71 +16,57 @@ pages. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Original CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-  <title>Colin's Contact page</title>
+  <title>Colin's Contact Page</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
+  <div class="my-header">
+    <nav class="navbar my-navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
         <a id="logo" class="navbar-brand" href="index.html">Colin Reesor</a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-text" href="index.html">About</a></li>
+            <li><a class="navbar-text" href="portfolio.html">Portfolio</a></li>
+            <li><a class="navbar-text" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="navbar-text" href="index.html">About</a></li>
-          <li><a class="navbar-text" href="portfolio.html">Portfolio</a></li>
-          <li><a class="navbar-text" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
+    <img src="./Assets/Images/background.png">
+  </div>
 
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-header">
-          <h1>Contact</h1>
-        </div>
-        <div class="row">
-          <div class="card card-body">
-            <div class="form-group col-sm-12">
-              <div class="input-group-prepend">
-                <label for="basic-url">Name</label>
-                <input type="text" class="form-control" placeholder="Herbie Hancock" aria-label="Username"
-                  aria-describedby="basic-addon1">
-              </div>
-            </div>
-            <div class="form-group col-sm-12">
-              <div class="input-group-prepend">
-                <label for="basic-url">Email</label>
-              </div>
-              <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Username"
-                id="basic-url" aria-describedby="basic-addon3">
-            </div>
-            <div class="form-group col-sm-12">
-              <div class="input-group-prepend">
-                <label for="basic-url">Your Message</label>
-              </div>
-              <textarea class="form-control" placeholder="Say something profound to me..." aria-label="Username"
-                aria-label="With textarea"></textarea>
-              <button class="btn btn-primary" type="submit">Submit</button>
-            </div>
-            <br />
-          </div>
-        </div>
+    <form>
+      <div class="page-header">
+        <h1>Contact</h1>
       </div>
-    </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="user-name" placeholder="Herbie Hancock">
+      </div>
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" class="form-control" id="user-email" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea class="form-control" id="user-msg" placeholder="Say something profound..." rows="3"></textarea>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
   </div>
 
   <footer>
-    <div class="footer navbar navbar-default navbar-fixed-bottom">
+    <div class="footer navbar-fixed-bottom">
       &copy; Copyright 2019 Colin Reesor
     </div>
   </footer>
