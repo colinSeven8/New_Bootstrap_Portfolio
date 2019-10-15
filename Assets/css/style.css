@@ -21,6 +21,7 @@
 
 .my-navbar .navbar-brand {
     color: white;
+    padding: none;
 }
 
 body {
@@ -108,7 +109,7 @@ label {
     overflow: auto;
     position: relative;
     float: left;
-    margin: 20px 0 20px;
+    margin: 20px 0;
 }
 
 .work h3 {
